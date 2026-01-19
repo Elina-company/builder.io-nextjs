@@ -380,14 +380,18 @@
   .mainContent {
     max-width: calc(100% - 337px - 25px);
   }
-  
+
   .tableContainer {
     width: 100%;
     max-width: 901px;
   }
-  
+
   .table {
     width: 100%;
+  }
+
+  .usersTabHeader {
+    margin-bottom: 24px;
   }
 }
 
