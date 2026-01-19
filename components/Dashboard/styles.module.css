@@ -262,6 +262,31 @@
   color: #FFF;
 }
 
+/* Users Tab */
+.usersTabHeader {
+  margin-bottom: 32px;
+}
+
+.usersTabTitle {
+  color: #111827;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: -0.56px;
+  margin: 0 0 8px 0;
+}
+
+.usersTabDescription {
+  color: #545F71;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.32px;
+  margin: 0;
+}
+
 /* Table */
 .tableContainer {
   width: 901px;
@@ -324,19 +349,49 @@
   letter-spacing: -0.32px;
 }
 
+/* Status Badge */
+.statusBadge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.28px;
+}
+
+.statusActive {
+  background: #D1F4E0;
+  color: #065F46;
+}
+
+.statusInactive {
+  background: #FEE2E2;
+  color: #991B1B;
+}
+
+.statusPending {
+  background: #FEF3C7;
+  color: #92400E;
+}
+
 /* Responsive adjustments */
 @media (max-width: 1280px) {
   .mainContent {
     max-width: calc(100% - 337px - 25px);
   }
-  
+
   .tableContainer {
     width: 100%;
     max-width: 901px;
   }
-  
+
   .table {
     width: 100%;
+  }
+
+  .usersTabHeader {
+    margin-bottom: 24px;
   }
 }
 
@@ -345,23 +400,23 @@
     height: auto;
     min-height: 100vh;
   }
-  
+
   .topNav {
     flex-direction: column;
     height: auto;
     gap: 12px;
     padding: 12px;
   }
-  
+
   .topNavLeft {
     width: 100%;
   }
-  
+
   .searchContainer {
     width: 100%;
     max-width: 100%;
   }
-  
+
   .sideNav {
     position: relative;
     left: 0;
@@ -371,7 +426,7 @@
     margin: 12px;
     margin-bottom: 0;
   }
-  
+
   .mainContent {
     position: relative;
     left: 0;
@@ -380,20 +435,29 @@
     max-width: 100%;
     padding: 12px;
   }
-  
+
   .accountSummaryCards {
     flex-direction: column;
     gap: 16px;
   }
-  
+
   .accountCard {
     width: 100%;
   }
-  
+
+  .usersTabHeader {
+    margin-bottom: 16px;
+  }
+
+  .usersTabTitle {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
   .tableContainer {
     overflow-x: auto;
   }
-  
+
   .table {
     min-width: 600px;
   }
